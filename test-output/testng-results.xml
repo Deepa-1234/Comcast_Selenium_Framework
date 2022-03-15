@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="11" total="13" passed="0" failed="2" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[=================Databade connection opened=============]]>
+    </line>
+    <line>
+      <![CDATA[***********Browser opened***********]]>
+    </line>
+    <line>
+      <![CDATA[    Login to application successful]]>
+    </line>
+    <line>
+      <![CDATA[-----logged out successfully-----]]>
+    </line>
+    <line>
+      <![CDATA[***********Browser closed***********]]>
+    </line>
+    <line>
+      <![CDATA[***********Browser opened***********]]>
+    </line>
+    <line>
+      <![CDATA[    Login to application successful]]>
+    </line>
+    <line>
+      <![CDATA[-----logged out successfully-----]]>
+    </line>
+    <line>
+      <![CDATA[***********Browser closed***********]]>
+    </line>
+    <line>
+      <![CDATA[===============Closed the databade connection==================]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-03-15T10:54:03 IST" name="Suite" finished-at="2022-03-15T10:55:25 IST" duration-ms="82022">
+    <groups>
+      <group name="SystemTest">
+        <method signature="ContactTest.createContactTest()[pri:0, instance:com.crm.comcat.contactTest.ContactTest@57cf54e1]" name="createContactTest" class="com.crm.comcat.contactTest.ContactTest"/>
+      </group> <!-- SystemTest -->
+      <group name="smokeTest">
+        <method signature="ContactTest.createContactTest()[pri:0, instance:com.crm.comcat.contactTest.ContactTest@57cf54e1]" name="createContactTest" class="com.crm.comcat.contactTest.ContactTest"/>
+        <method signature="OrganizatonTest.createOrgTest()[pri:0, instance:com.crm.comcat.orgTest.OrganizatonTest@3c7f66c4]" name="createOrgTest" class="com.crm.comcat.orgTest.OrganizatonTest"/>
+      </group> <!-- smokeTest -->
+    </groups>
+    <test started-at="2022-03-15T10:54:03 IST" name="Test" finished-at="2022-03-15T10:55:25 IST" duration-ms="82022">
+      <class name="com.crm.comcat.contactTest.ContactTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.crm.comcat.contactTest.ContactTest@57cf54e1]" started-at="2022-03-15T10:54:03 IST" name="configBS" finished-at="2022-03-15T10:54:03 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[=================Databade connection opened=============]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.crm.comcat.contactTest.ContactTest@57cf54e1]" started-at="2022-03-15T10:54:03 IST" name="configBC" finished-at="2022-03-15T10:54:06 IST" duration-ms="3302" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[***********Browser opened***********]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.crm.comcat.contactTest.ContactTest@57cf54e1]" started-at="2022-03-15T10:54:06 IST" name="configBM" finished-at="2022-03-15T10:54:12 IST" duration-ms="6014" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[    Login to application successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createContactTest()[pri:0, instance:com.crm.comcat.contactTest.ContactTest@57cf54e1]" started-at="2022-03-15T10:54:12 IST" name="createContactTest" finished-at="2022-03-15T10:54:43 IST" duration-ms="30522" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for title to contain "Contacts". Current title: "Administrator - Organizations - vtiger CRM 5 - Commercial Open Source CRM" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HN4067J', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52741}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe27615e5ed5182fc876e9a133065d15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Contacts". Current title: "Administrator - Organizations - vtiger CRM 5 - Commercial Open Source CRM" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HN4067J', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52741}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe27615e5ed5182fc876e9a133065d15
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.crm.GenericLibrary.WebDriverUtility.waitForElementVisible(WebDriverUtility.java:63)
+at com.crm.comcat.contactTest.ContactTest.createContactTest(ContactTest.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.crm.comcat.contactTest.ContactTest@57cf54e1]" started-at="2022-03-15T10:54:43 IST" name="configAM" finished-at="2022-03-15T10:54:45 IST" duration-ms="1892" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[-----logged out successfully-----]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.crm.comcat.contactTest.ContactTest@57cf54e1]" started-at="2022-03-15T10:54:45 IST" name="configAC" finished-at="2022-03-15T10:54:45 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[***********Browser closed***********]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.crm.comcat.contactTest.ContactTest@57cf54e1]" started-at="2022-03-15T10:55:25 IST" name="configAS" finished-at="2022-03-15T10:55:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[===============Closed the databade connection==================]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- com.crm.comcat.contactTest.ContactTest -->
+      <class name="com.crm.comcat.orgTest.OrganizatonTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.crm.comcat.orgTest.OrganizatonTest@3c7f66c4]" started-at="2022-03-15T10:54:45 IST" name="configBC" finished-at="2022-03-15T10:54:47 IST" duration-ms="1602" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[***********Browser opened***********]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.crm.comcat.orgTest.OrganizatonTest@3c7f66c4]" started-at="2022-03-15T10:54:47 IST" name="configBM" finished-at="2022-03-15T10:54:52 IST" duration-ms="5310" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[    Login to application successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createOrgTest()[pri:0, instance:com.crm.comcat.orgTest.OrganizatonTest@3c7f66c4]" started-at="2022-03-15T10:54:52 IST" name="createOrgTest" finished-at="2022-03-15T10:55:22 IST" duration-ms="29732" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for title to contain "Organizations". Current title: "Administrator - Products - vtiger CRM 5 - Commercial Open Source CRM" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HN4067J', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50942}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 11d34d9db759f16368d0f11b276cb38c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Organizations". Current title: "Administrator - Products - vtiger CRM 5 - Commercial Open Source CRM" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HN4067J', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50942}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 11d34d9db759f16368d0f11b276cb38c
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.crm.GenericLibrary.WebDriverUtility.waitForElementVisible(WebDriverUtility.java:63)
+at com.crm.comcat.orgTest.OrganizatonTest.createOrgTest(OrganizatonTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.crm.comcat.orgTest.OrganizatonTest@3c7f66c4]" started-at="2022-03-15T10:55:22 IST" name="configAM" finished-at="2022-03-15T10:55:25 IST" duration-ms="2706" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[-----logged out successfully-----]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.crm.comcat.orgTest.OrganizatonTest@3c7f66c4]" started-at="2022-03-15T10:55:25 IST" name="configAC" finished-at="2022-03-15T10:55:25 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[***********Browser closed***********]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.crm.comcat.orgTest.OrganizatonTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

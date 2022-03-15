@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>TestNG:  Test-Runner-chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test-Runner-chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jan 22 18:41:33 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>331 seconds (331266 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.comcat.contactTest.Contact.createContactGrpAsMarketingGrpTest()'><b>createContactGrpAsMarketingGrpTest</b><br>Test class: com.crm.comcat.contactTest.Contact<br/>
+<a href="#Output-1200405212" onClick='toggleBox("Output-1200405212", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1200405212" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1200405212">
+Navigated to Contacts<br/>
+Navigated to create new Contact Page<br/>
+Contact created<br/>
+Assigned to Marketing Group  :Pass<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.crm.comcat.contactTest.Contact@2f217633</td></tr>
+<tr>
+<td title='com.crm.comcat.contactTest.Contact.createContactGrpAsSupportGrpTest()'><b>createContactGrpAsSupportGrpTest</b><br>Test class: com.crm.comcat.contactTest.Contact<br/>
+<a href="#Output-1635120465" onClick='toggleBox("Output-1635120465", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1635120465" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1635120465">
+Navigated to Contacts:Pass<br/>
+Navigated to create new Contact Page:Pass<br/>
+Assigned to Support Group  :Pass<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.crm.comcat.contactTest.Contact@2f217633</td></tr>
+<tr>
+<td title='com.crm.comcat.contactTest.Contact.createContactWithLeadSourceTest()'><b>createContactWithLeadSourceTest</b><br>Test class: com.crm.comcat.contactTest.Contact<br/>
+<a href="#Output-948780667" onClick='toggleBox("Output-948780667", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-948780667" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-948780667">
+Navigated to Contacts<br/>
+Navigated to create new Contact Page<br/>
+LeadSource Employee:Pass<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.crm.comcat.contactTest.Contact@2f217633</td></tr>
+<tr>
+<td title='com.crm.comcat.contactTest.Contact.createContactTest()'><b>createContactTest</b><br>Test class: com.crm.comcat.contactTest.Contact<br/>
+<a href="#Output-658687962" onClick='toggleBox("Output-658687962", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-658687962" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-658687962">
+Navigated to Contacts<br/>
+Navigated to create new Contact Page<br/>
+Contact maj singh created Successfully:Pass<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.crm.comcat.contactTest.Contact@2f217633</td></tr>
+<tr>
+<td title='com.crm.comcat.contactTest.Contact.createContactUserAsAdminTest()'><b>createContactUserAsAdminTest</b><br>Test class: com.crm.comcat.contactTest.Contact<br/>
+<a href="#Output-1681431189" onClick='toggleBox("Output-1681431189", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1681431189" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1681431189">
+Navigated to Contacts:Pass<br/>
+Navigated to create new Contact Page:Pass<br/>
+Contact maj singh created Successfully:Pass<br/>
+Assigned to Administrator  :Pass<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.crm.comcat.contactTest.Contact@2f217633</td></tr>
+<tr>
+<td title='com.crm.comcat.contactTest.Contact.createContactWithOrgTest()'><b>createContactWithOrgTest</b><br>Test class: com.crm.comcat.contactTest.Contact<br/>
+<a href="#Output-125374372" onClick='toggleBox("Output-125374372", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-125374372" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-125374372">
+Oganization TY_810 created<br/>
+Navigated to create new Contact Page<br/>
+Contact maj singh is created with TY_810 orgamization:Pass<br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>com.crm.comcat.contactTest.Contact@2f217633</td></tr>
+<tr>
+<td title='com.crm.comcat.contactTest.Contact.CreateContactReportToTest()'><b>CreateContactReportToTest</b><br>Test class: com.crm.comcat.contactTest.Contact<br/>
+<a href="#Output-856559088" onClick='toggleBox("Output-856559088", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-856559088" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-856559088">
+Navigated to Contacts<br/>
+Navigated to create new Contact Page<br/>
+Contact page displayed in another browser window<br/>
+selected contact piyush57 is displayed in reports to:Pass<br/>
+Contact name erased:pass<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.crm.comcat.contactTest.Contact@2f217633</td></tr>
+<tr>
+<td title='com.crm.comcat.contactTest.Contact.createContactWithoutMandFieldTest()'><b>createContactWithoutMandFieldTest</b><br>Test class: com.crm.comcat.contactTest.Contact<br/>
+<a href="#Output-1607043351" onClick='toggleBox("Output-1607043351", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1607043351" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1607043351">
+Navigated to Contacts<br/>
+Navigated to create new Contact Page<br/>
+Last Name cannot be empty:Pass<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.crm.comcat.contactTest.Contact@2f217633</td></tr>
+</table><p>
+</body>
+</html>
